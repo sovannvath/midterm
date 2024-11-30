@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple App</title>
+</head>
+<body>
+  <h1 id="message">Hello World</h1>
+  <button id="toggleButton">Toggle Message</button>
+
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const messageElement = document.getElementById('message');
+
+    toggleButton.addEventListener('click', () => {
+      if (messageElement.innerText === 'Hello World') {
+        messageElement.innerText = 'Goodbye World';
+      } else {
+        messageElement.innerText = 'Hello World';
+      }
+    });
+  </script>
+</body>
+</html>
